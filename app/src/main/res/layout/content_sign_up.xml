@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303F9F"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SignUp"
+    tools:showIn="@layout/activity_sign_up">
+    <TextView
+        android:id="@+id/txt_app_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/online_rehab"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:hint="Enter Email Address"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/txt_app_name"
+        app:layout_constraintStart_toStartOf="@+id/txt_app_name"
+        app:layout_constraintTop_toBottomOf="@+id/txt_app_name"
+        tools:targetApi="o" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="0dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:hint="@string/enter_password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/edt_email"
+        app:layout_constraintStart_toStartOf="@+id/edt_email"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+    <Button
+        android:id="@+id/btn_sgn"
+        android:layout_width="193dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="27dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/aclonica"
+        android:text="Sign Up"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="@+id/edt_password"
+        app:layout_constraintTop_toBottomOf="@+id/edt_confirm" />
+
+    <TextView
+        android:id="@+id/txt_to_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/aclonica"
+        android:text="I already Have an Account"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edt_password"
+        app:layout_constraintTop_toBottomOf="@+id/btn_sgn" />
+
+    <EditText
+        android:id="@+id/edt_confirm"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:fontFamily="@font/aclonica"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="@+id/edt_password"
+        app:layout_constraintStart_toStartOf="@+id/edt_password"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+    <ProgressBar
+        android:id="@+id/re_progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:progressDrawable="@color/colorPrimaryDark"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/edt_password"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

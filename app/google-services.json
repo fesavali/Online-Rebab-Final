@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "921977553200",
+    "firebase_url": "https://online-rehab-3.firebaseio.com",
+    "project_id": "online-rehab-3",
+    "storage_bucket": "online-rehab-3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:921977553200:android:c638e26e058b696c90c8f5",
+        "android_client_info": {
+          "package_name": "com.frankcode1.onlinerehab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "921977553200-eejcht0326q3j8da1m8jkk79231nafb2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.frankcode1.onlinerehab",
+            "certificate_hash": "04c5087db004d77b5222d0c345c966da4c6f23db"
+          }
+        },
+        {
+          "client_id": "921977553200-2t1ug90k4fb7iged81qseo0apae3se53.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAC5wWSrmvLpdT5zLKiwaPKQP0UodFWx9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "921977553200-2t1ug90k4fb7iged81qseo0apae3se53.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

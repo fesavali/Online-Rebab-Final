@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#303F9F">
+
+    <TextView
+        android:id="@+id/text_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textColor="#303F9F"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_about"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="56dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/about_us"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/text_social"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_social"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="52dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/social_media"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        app:layout_constraintEnd_toEndOf="@+id/txt_about"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_about" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="28dp"
+        android:background="@color/colorPrimary"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/login"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/btn_signup"
+        app:layout_constraintEnd_toEndOf="@+id/text_social"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/text_social" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/sign_up"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/btn_login" />
+
+    <TextView
+        android:id="@+id/txt_app_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="164dp"
+        android:fontFamily="@font/aclonica"
+        android:text="@string/online_rehab"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/txt_about"
+        app:layout_constraintEnd_toEndOf="@+id/txt_about"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
