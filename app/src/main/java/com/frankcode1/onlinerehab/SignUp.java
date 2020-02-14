@@ -113,6 +113,9 @@ public class SignUp extends AppCompatActivity {
                         if(task.isSuccessful()){
                             Log.d(getCallingPackage(), "createUserWithEmail:success");
                             Toast.makeText(SignUp.this, "User Registered Successfully", Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(SignUp.this, Register.class);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                            startActivity(intent);
                         }else {
 //                            Toast.makeText(SignUp.this, "Registration Not Successfull", Toast.LENGTH_LONG).show();
                             Toast.makeText(getApplicationContext(),task.getException().getMessage(),Toast.LENGTH_LONG).show();

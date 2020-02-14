@@ -28,4 +28,20 @@
     <string name="enter_password">Enter Password</string>
     <string name="i_don_t_have_an_account">I Don\'t Have An Account</string>
     <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_activity_register">Register</string>
+    <string name="please_fill">Please Fill The Following Information</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="other_drugs">Other Drugs:</string>
+    <string name="drug">Drug:</string>
+    <string name="d_o_b">D.O.B:</string>
+    <string name="drug_addicted_to">Drug Addicted To</string>
+    <string name="specify_other_drugs_used">Specify Other Drugs Used</string>
+    <string name="duration_used">Duration Used:</string>
+    <string name="duration_you_have_used_the_drug">Duration You Have Used the Drug</string>
+    <string name="location">Location:</string>
+    <string name="your_current_location">Your Current Location</string>
+    <string name="enter_date_of_birth">Enter Date Of Birth</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="save_info">Save Info</string>
 </resources>
